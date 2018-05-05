@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yenilmez.mis">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/micon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/micon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+    <activity android:name=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name=".addWordActivity" />
+    <activity android:name=".statisticsActivity" />
+    <activity android:name=".addWordListActivity" />
+    <activity android:name=".chooseWeekActivity" />
+    <activity android:name=".practiceActivity" />
+    <activity android:name=".sozlukOyunuActivity" />
+    <activity android:name=".testOyunuActivity" />
+    <activity android:name=".kelimeGrubuSecmeActivity" />
+    <activity android:name=".dinlemeTestOyunuActivity" />
+    <activity android:name=".anlamYazmaActivity" />
+    <activity android:name=".dinlemeYazmaOyunuActivity"></activity>
+    </application>
+</manifest>

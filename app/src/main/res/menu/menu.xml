@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/calis" android:title="Kelime Egzersizi"></item>
+    <item android:id="@+id/ekle" android:title="Kelime Ekle"></item>
+    <item android:id="@+id/istatistik" android:title="İstatistik"></item>
+
+</menu>

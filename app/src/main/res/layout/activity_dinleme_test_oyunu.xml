@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yenilmez.mis.dinlemeTestOyunuActivity">
+
+    <RadioGroup
+        android:id="@+id/rG_sikler"
+        android:layout_width="317dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="54dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/ibtn_Dinle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rbtn_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="sik_Secti"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="sik_Secti"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="sik_Secti"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="sik_Secti"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="316dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="70dp"
+        android:text="Dinlediğiniz kelime hangisidir ?"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rG_sikler"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibtn_Dinle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="btn_DinleMetot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rG_sikler"
+        app:srcCompat="@drawable/listen" />
+
+    <TextView
+        android:id="@+id/tVRekor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="16dp"
+        android:text="Rekor : 0"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tVSkor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="skor : 0"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
